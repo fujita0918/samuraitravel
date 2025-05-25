@@ -15,8 +15,7 @@ import lombok.Data;
 @Entity
 @Table(name = "verification_tokens")
 @Data
-
-public class VerificationToken {
+public class VerificationToken {    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -33,5 +32,5 @@ public class VerificationToken {
     private Timestamp createdAt;
     
     @Column(name = "updated_at", insertable = false, updatable = false)
-    private Timestamp updatedAt;   
+    private Timestamp updatedAt;        
 }

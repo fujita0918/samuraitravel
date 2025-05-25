@@ -4,7 +4,7 @@
         <div th:replace="~{fragment :: meta}"></div>   
             
        <div th:replace="~{fragment :: styles}"></div> 
-       
+             
        <title>民宿詳細</title>       
    </head>
    <body>
@@ -115,8 +115,9 @@
                                        <span th:text="${house.getPhoneNumber()}"></span>
                                    </div>
                                </div>                                
-                           </div>                                                  
-               
+                           </div>
+                           
+                     
                        </div>
                    </div>
                </div>             
@@ -127,6 +128,9 @@
        </div>    
        
        <!-- Bootstrap -->
-       <div th:replace="~{fragment :: scripts}"></div>         
+       <div th:replace="~{fragment :: scripts}"></div>     
+       
+
+           
    </body>
 </html>
